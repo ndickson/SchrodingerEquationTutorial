@@ -30,11 +30,6 @@ typedef uint32_t	uint;
 
 #include <algorithm>
 #include <vector>
-#include <thread>
-
-inline int getNumProcessors() {
-	return std::thread::hardware_concurrency();
-}
 
 inline int correctFDiv(int numerator,int denominator) {
 	int q = numerator / denominator;
